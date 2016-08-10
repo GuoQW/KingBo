@@ -29,6 +29,6 @@ extension GQDemoViewController {
     override func setUpUI() {
         super.setUpUI()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", style: UIBarButtonItemStyle.Plain, target: self, action: "nextClick")
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", style: UIBarButtonItemStyle.Plain, target: self, action: "nextClick")
     }
 }

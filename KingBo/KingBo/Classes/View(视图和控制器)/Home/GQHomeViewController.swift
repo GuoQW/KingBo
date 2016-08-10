@@ -33,6 +33,6 @@ extension GQHomeViewController {
         super.setUpUI()
         
 //        let leftItem = UIBarButtonItem(title: "好友", style: UIBarButtonItemStyle.Plain, target: self, action: "showFriends")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", imageName: "", target: self, action: Selector("showFriends"))
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", imageName: "", target: self, action: Selector("showFriends"))
     }
 }
