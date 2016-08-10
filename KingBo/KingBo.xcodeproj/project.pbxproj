@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042411D5B21EA00085868 /* AppDelegate.swift */; };
-		C7F042441D5B21EA00085868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042431D5B21EA00085868 /* ViewController.swift */; };
-		C7F042471D5B21EA00085868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F042451D5B21EA00085868 /* Main.storyboard */; };
 		C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F042481D5B21EA00085868 /* Assets.xcassets */; };
 		C7F0424C1D5B21EA00085868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */; };
 		C7F042571D5B21EA00085868 /* KingBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042561D5B21EA00085868 /* KingBoTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		C7F0423E1D5B21EA00085868 /* KingBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F042411D5B21EA00085868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7F042431D5B21EA00085868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7F042461D5B21EA00085868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7F042481D5B21EA00085868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7F0424B1D5B21EA00085868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7F0424D1D5B21EA00085868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				C7F042411D5B21EA00085868 /* AppDelegate.swift */,
-				C7F042431D5B21EA00085868 /* ViewController.swift */,
-				C7F042451D5B21EA00085868 /* Main.storyboard */,
 				C7F042481D5B21EA00085868 /* Assets.xcassets */,
 				C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */,
 				C7F0424D1D5B21EA00085868 /* Info.plist */,
@@ -187,6 +181,7 @@
 		C7F042361D5B21EA00085868 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GQ;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = guoqing;
@@ -231,7 +226,6 @@
 			files = (
 				C7F0424C1D5B21EA00085868 /* LaunchScreen.storyboard in Resources */,
 				C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */,
-				C7F042471D5B21EA00085868 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F042441D5B21EA00085868 /* ViewController.swift in Sources */,
 				C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +286,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7F042451D5B21EA00085868 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7F042461D5B21EA00085868 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,7 +382,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = KingBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +395,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = KingBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
