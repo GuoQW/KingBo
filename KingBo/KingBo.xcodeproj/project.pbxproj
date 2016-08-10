@@ -18,6 +18,7 @@
 		C7F042821D5B275700085868 /* GQMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042811D5B275700085868 /* GQMessageViewController.swift */; };
 		C7F042841D5B277000085868 /* GQDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042831D5B277000085868 /* GQDiscoverViewController.swift */; };
 		C7F042861D5B278400085868 /* GQProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042851D5B278400085868 /* GQProfileViewController.swift */; };
+		C7F0428A1D5B2E7300085868 /* NSBundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C7F042811D5B275700085868 /* GQMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQMessageViewController.swift; sourceTree = "<group>"; };
 		C7F042831D5B277000085868 /* GQDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQDiscoverViewController.swift; sourceTree = "<group>"; };
 		C7F042851D5B278400085868 /* GQProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQProfileViewController.swift; sourceTree = "<group>"; };
+		C7F042871D5B2C7800085868 /* KingBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KingBo-Bridge.h"; sourceTree = "<group>"; };
+		C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 			children = (
 				C7F0426F1D5B269800085868 /* Classes */,
 				C7F042411D5B21EA00085868 /* AppDelegate.swift */,
+				C7F042871D5B2C7800085868 /* KingBo-Bridge.h */,
 				C7F042481D5B21EA00085868 /* Assets.xcassets */,
 				C7F0424D1D5B21EA00085868 /* Info.plist */,
 			);
@@ -152,6 +156,7 @@
 		C7F042711D5B269800085868 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				C7F042881D5B2D5A00085868 /* Extension */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -215,6 +220,14 @@
 			children = (
 			);
 			path = "ViewModel(视图和模型)";
+			sourceTree = "<group>";
+		};
+		C7F042881D5B2D5A00085868 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F042861D5B278400085868 /* GQProfileViewController.swift in Sources */,
+				C7F0428A1D5B2E7300085868 /* NSBundle+Extension.swift in Sources */,
 				C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */,
 				C7F0427C1D5B26F700085868 /* GQNavigationController.swift in Sources */,
 				C7F042841D5B277000085868 /* GQDiscoverViewController.swift in Sources */,
@@ -481,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KingBo/KingBo-Bridge.h";
 			};
 			name = Debug;
 		};
@@ -494,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KingBo/KingBo-Bridge.h";
 			};
 			name = Release;
 		};

@@ -13,23 +13,57 @@ class GQMainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpAllChidsViewController()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension GQMainViewController {
+  
+    private func setUpAllChidsViewController() {
+       
+        let arr = [
+            ["clsName":"GQHomeViewController","title":"首页","imageName":"home"],
+            ["clsName":"GQMessageViewController","title":"消息","imageName":"message_center"],
+            ["clsName":"GQDiscoverViewController","title":"发现","imageName":"discover"],
+            ["clsName":"GQProfileViewController","title":"我的","imageName":"profile"]
+                ]
+        var arrM = [UIViewController]()
+        
+        for dict in arr {
+          
+            arrM.append(controller(dict))
+        }
+        
+        viewControllers = arrM
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: - 控制器
+    private func controller(dict:[String:String]) -> UIViewController {
+      
+        guard let clsName = dict["clsName"],
+                  title = dict["title"],
+                  imageName = dict["imageName"],
+                 cls = NSClassFromString(NSBundle.mainBundle().namespace + "." + clsName) as? UIViewController.Type else
+        {
+                  return UIViewController()
+        }
+        
+        let vc = cls.init()
+        vc.title = title
+        
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named:"tabbar_" + imageName + "_selected")
+        
+        let nav = UINavigationController(rootViewController: vc)
+        
+        return nav
     }
-    */
-
+    
+    
+    
+    
+    
+    
+    
 }
