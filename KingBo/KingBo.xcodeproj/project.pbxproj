@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042411D5B21EA00085868 /* AppDelegate.swift */; };
+		C7F042441D5B21EA00085868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042431D5B21EA00085868 /* ViewController.swift */; };
+		C7F042471D5B21EA00085868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F042451D5B21EA00085868 /* Main.storyboard */; };
+		C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F042481D5B21EA00085868 /* Assets.xcassets */; };
+		C7F0424C1D5B21EA00085868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */; };
+		C7F042571D5B21EA00085868 /* KingBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042561D5B21EA00085868 /* KingBoTests.swift */; };
+		C7F042621D5B21EA00085868 /* KingBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042611D5B21EA00085868 /* KingBoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7F042531D5B21EA00085868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F042361D5B21EA00085868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F0423D1D5B21EA00085868;
+			remoteInfo = KingBo;
+		};
+		C7F0425E1D5B21EA00085868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F042361D5B21EA00085868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F0423D1D5B21EA00085868;
+			remoteInfo = KingBo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7F0423E1D5B21EA00085868 /* KingBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F042411D5B21EA00085868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7F042431D5B21EA00085868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7F042461D5B21EA00085868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7F042481D5B21EA00085868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7F0424B1D5B21EA00085868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7F0424D1D5B21EA00085868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F042521D5B21EA00085868 /* KingBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F042561D5B21EA00085868 /* KingBoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingBoTests.swift; sourceTree = "<group>"; };
+		C7F042581D5B21EA00085868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F0425D1D5B21EA00085868 /* KingBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F042611D5B21EA00085868 /* KingBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingBoUITests.swift; sourceTree = "<group>"; };
+		C7F042631D5B21EA00085868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F0423B1D5B21EA00085868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F0424F1D5B21EA00085868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F0425A1D5B21EA00085868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F042351D5B21EA00085868 = {
+			isa = PBXGroup;
+			children = (
+				C7F042401D5B21EA00085868 /* KingBo */,
+				C7F042551D5B21EA00085868 /* KingBoTests */,
+				C7F042601D5B21EA00085868 /* KingBoUITests */,
+				C7F0423F1D5B21EA00085868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F0423F1D5B21EA00085868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F0423E1D5B21EA00085868 /* KingBo.app */,
+				C7F042521D5B21EA00085868 /* KingBoTests.xctest */,
+				C7F0425D1D5B21EA00085868 /* KingBoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F042401D5B21EA00085868 /* KingBo */ = {
+			isa = PBXGroup;
+			children = (
+				C7F042411D5B21EA00085868 /* AppDelegate.swift */,
+				C7F042431D5B21EA00085868 /* ViewController.swift */,
+				C7F042451D5B21EA00085868 /* Main.storyboard */,
+				C7F042481D5B21EA00085868 /* Assets.xcassets */,
+				C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */,
+				C7F0424D1D5B21EA00085868 /* Info.plist */,
+			);
+			path = KingBo;
+			sourceTree = "<group>";
+		};
+		C7F042551D5B21EA00085868 /* KingBoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F042561D5B21EA00085868 /* KingBoTests.swift */,
+				C7F042581D5B21EA00085868 /* Info.plist */,
+			);
+			path = KingBoTests;
+			sourceTree = "<group>";
+		};
+		C7F042601D5B21EA00085868 /* KingBoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F042611D5B21EA00085868 /* KingBoUITests.swift */,
+				C7F042631D5B21EA00085868 /* Info.plist */,
+			);
+			path = KingBoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7F0423D1D5B21EA00085868 /* KingBo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F042661D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBo" */;
+			buildPhases = (
+				C7F0423A1D5B21EA00085868 /* Sources */,
+				C7F0423B1D5B21EA00085868 /* Frameworks */,
+				C7F0423C1D5B21EA00085868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KingBo;
+			productName = KingBo;
+			productReference = C7F0423E1D5B21EA00085868 /* KingBo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7F042511D5B21EA00085868 /* KingBoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F042691D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBoTests" */;
+			buildPhases = (
+				C7F0424E1D5B21EA00085868 /* Sources */,
+				C7F0424F1D5B21EA00085868 /* Frameworks */,
+				C7F042501D5B21EA00085868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F042541D5B21EA00085868 /* PBXTargetDependency */,
+			);
+			name = KingBoTests;
+			productName = KingBoTests;
+			productReference = C7F042521D5B21EA00085868 /* KingBoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7F0425C1D5B21EA00085868 /* KingBoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F0426C1D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBoUITests" */;
+			buildPhases = (
+				C7F042591D5B21EA00085868 /* Sources */,
+				C7F0425A1D5B21EA00085868 /* Frameworks */,
+				C7F0425B1D5B21EA00085868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F0425F1D5B21EA00085868 /* PBXTargetDependency */,
+			);
+			name = KingBoUITests;
+			productName = KingBoUITests;
+			productReference = C7F0425D1D5B21EA00085868 /* KingBoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F042361D5B21EA00085868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = guoqing;
+				TargetAttributes = {
+					C7F0423D1D5B21EA00085868 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C7F042511D5B21EA00085868 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C7F0423D1D5B21EA00085868;
+					};
+					C7F0425C1D5B21EA00085868 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C7F0423D1D5B21EA00085868;
+					};
+				};
+			};
+			buildConfigurationList = C7F042391D5B21EA00085868 /* Build configuration list for PBXProject "KingBo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7F042351D5B21EA00085868;
+			productRefGroup = C7F0423F1D5B21EA00085868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F0423D1D5B21EA00085868 /* KingBo */,
+				C7F042511D5B21EA00085868 /* KingBoTests */,
+				C7F0425C1D5B21EA00085868 /* KingBoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7F0423C1D5B21EA00085868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F0424C1D5B21EA00085868 /* LaunchScreen.storyboard in Resources */,
+				C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */,
+				C7F042471D5B21EA00085868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F042501D5B21EA00085868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F0425B1D5B21EA00085868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F0423A1D5B21EA00085868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F042441D5B21EA00085868 /* ViewController.swift in Sources */,
+				C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F0424E1D5B21EA00085868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F042571D5B21EA00085868 /* KingBoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F042591D5B21EA00085868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F042621D5B21EA00085868 /* KingBoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7F042541D5B21EA00085868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7F0423D1D5B21EA00085868 /* KingBo */;
+			targetProxy = C7F042531D5B21EA00085868 /* PBXContainerItemProxy */;
+		};
+		C7F0425F1D5B21EA00085868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7F0423D1D5B21EA00085868 /* KingBo */;
+			targetProxy = C7F0425E1D5B21EA00085868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7F042451D5B21EA00085868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F042461D5B21EA00085868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7F0424A1D5B21EA00085868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7F0424B1D5B21EA00085868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7F042641D5B21EA00085868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7F042651D5B21EA00085868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7F042671D5B21EA00085868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KingBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7F042681D5B21EA00085868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KingBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C7F0426A1D5B21EA00085868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KingBoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingBo.app/KingBo";
+			};
+			name = Debug;
+		};
+		C7F0426B1D5B21EA00085868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KingBoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingBo.app/KingBo";
+			};
+			name = Release;
+		};
+		C7F0426D1D5B21EA00085868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KingBoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KingBo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C7F0426E1D5B21EA00085868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KingBoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoqing.KingBoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KingBo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F042391D5B21EA00085868 /* Build configuration list for PBXProject "KingBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F042641D5B21EA00085868 /* Debug */,
+				C7F042651D5B21EA00085868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F042661D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F042671D5B21EA00085868 /* Debug */,
+				C7F042681D5B21EA00085868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7F042691D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F0426A1D5B21EA00085868 /* Debug */,
+				C7F0426B1D5B21EA00085868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7F0426C1D5B21EA00085868 /* Build configuration list for PBXNativeTarget "KingBoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F0426D1D5B21EA00085868 /* Debug */,
+				C7F0426E1D5B21EA00085868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F042361D5B21EA00085868 /* Project object */;
+}
