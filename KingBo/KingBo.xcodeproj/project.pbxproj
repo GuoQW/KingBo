@@ -19,6 +19,7 @@
 		C7F042841D5B277000085868 /* GQDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042831D5B277000085868 /* GQDiscoverViewController.swift */; };
 		C7F042861D5B278400085868 /* GQProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042851D5B278400085868 /* GQProfileViewController.swift */; };
 		C7F0428A1D5B2E7300085868 /* NSBundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */; };
+		C7F042E41D5B75F400085868 /* GQDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042E31D5B75F400085868 /* GQDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C7F042851D5B278400085868 /* GQProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQProfileViewController.swift; sourceTree = "<group>"; };
 		C7F042871D5B2C7800085868 /* KingBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KingBo-Bridge.h"; sourceTree = "<group>"; };
 		C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extension.swift"; sourceTree = "<group>"; };
+		C7F042E31D5B75F400085868 /* GQDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		C7F042751D5B269800085868 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C7F042E21D5B75E800085868 /* Test */,
 				C7F042791D5B26D200085868 /* GQMainViewController.swift */,
 				C7F0427B1D5B26F700085868 /* GQNavigationController.swift */,
 				C7F0427D1D5B271F00085868 /* GQBaseViewController.swift */,
@@ -228,6 +231,14 @@
 				C7F042891D5B2E7300085868 /* NSBundle+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C7F042E21D5B75E800085868 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C7F042E31D5B75F400085868 /* GQDemoViewController.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 				C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */,
 				C7F0427C1D5B26F700085868 /* GQNavigationController.swift in Sources */,
 				C7F042841D5B277000085868 /* GQDiscoverViewController.swift in Sources */,
+				C7F042E41D5B75F400085868 /* GQDemoViewController.swift in Sources */,
 				C7F042821D5B275700085868 /* GQMessageViewController.swift in Sources */,
 				C7F0427A1D5B26D200085868 /* GQMainViewController.swift in Sources */,
 				C7F0427E1D5B271F00085868 /* GQBaseViewController.swift in Sources */,

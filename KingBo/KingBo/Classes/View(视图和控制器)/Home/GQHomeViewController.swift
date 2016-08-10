@@ -20,8 +20,7 @@ class GQHomeViewController: GQBaseViewController {
     @objc private func showFriends() {
        
         print("显示好友")
-        let testVc = UIViewController()
-
+        let testVc = GQDemoViewController()
         navigationController?.pushViewController(testVc, animated: true)
     }
 
