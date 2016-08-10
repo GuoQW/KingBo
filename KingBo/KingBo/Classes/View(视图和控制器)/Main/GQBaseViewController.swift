@@ -13,23 +13,22 @@ class GQBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension GQBaseViewController {
+
+    //设置随机色
+    func setUpUI() {
+//        let red = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
+//        let green = CGFloat( arc4random_uniform(255))/CGFloat(255.0)
+//        let blue = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
+        let r:CGFloat = CGFloat(CGFloat(random())/CGFloat(RAND_MAX))
+        let g:CGFloat = CGFloat(CGFloat(random())/CGFloat(RAND_MAX))
+        let b:CGFloat = CGFloat(CGFloat(random())/CGFloat(RAND_MAX))
+
+      view.backgroundColor = UIColor.init(red: r, green: g, blue: b, alpha: 1)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

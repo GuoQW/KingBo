@@ -81,7 +81,7 @@ extension GQMainViewController { //UI界面设置
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orangeColor()], forState: UIControlState.Highlighted)
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFontOfSize(13)], forState: UIControlState.Normal)
         
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = GQNavigationController(rootViewController: vc)
         
         return nav
     }

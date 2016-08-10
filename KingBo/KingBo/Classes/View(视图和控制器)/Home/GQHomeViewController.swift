@@ -15,21 +15,25 @@ class GQHomeViewController: GQBaseViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    //MARK: - 显示好友
+    @objc private func showFriends() {
+       
+        print("显示好友")
+        let testVc = UIViewController()
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        navigationController?.pushViewController(testVc, animated: true)
     }
-    */
 
+}
+
+extension GQHomeViewController {
+   
+    //MARK: - 重写父类的方法
+    override func setUpUI(){
+        super.setUpUI()
+        
+        let leftItem = UIBarButtonItem(title: "好友", style: UIBarButtonItemStyle.Plain, target: self, action: "showFriends")
+        navigationItem.leftBarButtonItem = leftItem
+    }
 }
