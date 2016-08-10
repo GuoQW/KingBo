@@ -14,6 +14,9 @@ class GQBaseViewController: UIViewController {
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 64))
     lazy var navItem = UINavigationItem()
     
+    //定义tablView
+    var tableView:UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,11 +45,22 @@ extension GQBaseViewController {
 
       view.backgroundColor = UIColor.init(red: r, green: g, blue: b, alpha: 1)
         
-      view.addSubview(navigationBar)
-      navigationBar.items = [navItem]
-        //解决右边透明度太高的问题
-//      navigationBar.barTintColor = UIColor.whiteColor()
-      navigationBar.translucent = false
+        setUpNav()
+        setUpTableView()
+    }
+    
+    private func setUpNav() {
+        view.addSubview(navigationBar)
+        navigationBar.items = [navItem]
+        //解决导航栏右边透明度太高的问题
+        //      navigationBar.barTintColor = UIColor.whiteColor()
+        navigationBar.translucent = false
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGrayColor()]
+    }
+    
+    private func setUpTableView() {
+      
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.height))
+         view.insertSubview(tableView!, belowSubview: navigationBar)
     }
 }
