@@ -28,19 +28,26 @@ class GQHomeViewController: GQBaseViewController {
     }
     
     //MARK: - 重写父类的方法
-    override func loadData() {
+    override func loadData() { //模拟延迟下拉刷新
         
         print("开始刷新数据")
         dispatch_after(2, dispatch_get_main_queue()) { () -> Void in
             
             for i in 0..<15 {
-                
-                self.statusList.insert(i.description, atIndex: 0)
+                if self.isToPull {
+                  self.statusList.append("上拉刷新\(i)")
+                }else {
+                    self.statusList.insert(i.description, atIndex: 0)
+                }
             }
+            
+            print("结束刷新")
+            self.refresh?.endRefreshing()
+            //结束
+            self.isToPull = false
+            self.tableView?.reloadData()
         }
-        print("结束刷新")
-        self.refresh?.endRefreshing()
-        tableView?.reloadData()
+      
     }
 
 }

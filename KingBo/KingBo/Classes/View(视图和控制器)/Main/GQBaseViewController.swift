@@ -18,6 +18,8 @@ class GQBaseViewController: UIViewController {
     var tableView:UITableView?
     //定义刷新控件
     var refresh:UIRefreshControl?
+    //上拉刷新
+    var isToPull = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,7 @@ class GQBaseViewController: UIViewController {
     
     //设置数据源
     func loadData(){
-    
+       refresh?.endRefreshing()
     }
 }
 
@@ -91,5 +93,22 @@ extension GQBaseViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //判断是否 存在行与列
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        if row < 0 || section < 0 {
+          return
+        }
+        
+        let count = tableView.numberOfRowsInSection(section)
+        if row == (count - 1) && !isToPull {
+            print("上拉刷新")
+            isToPull = true
+            loadData()
+        }
     }
 }
