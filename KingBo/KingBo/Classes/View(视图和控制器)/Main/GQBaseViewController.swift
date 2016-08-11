@@ -21,6 +21,9 @@ class GQBaseViewController: UIViewController {
     //上拉刷新
     var isToPull = false
     
+    //用户是否登录
+    var isLogin = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,7 +59,7 @@ extension GQBaseViewController {
       view.backgroundColor = UIColor.init(red: r, green: g, blue: b, alpha: 1)
        automaticallyAdjustsScrollViewInsets = false
         setUpNav()
-        setUpTableView()
+        isLogin ? setUpTableView() : setupUserView()
      
     }
     
@@ -81,6 +84,14 @@ extension GQBaseViewController {
         refresh = UIRefreshControl()
         tableView?.addSubview(refresh!)
         refresh?.addTarget(self, action: Selector("loadData"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    //MARK: - 设置用户登录视图
+    private func setupUserView() {
+       
+        let loginView = UIView(frame: view.bounds)
+        loginView.backgroundColor = UIColor.greenColor()
+        view.insertSubview(loginView, belowSubview: navigationBar)
     }
 }
 
