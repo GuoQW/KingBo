@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-extension UIBarButtonItem { //可以通过判断来决定是否需要图片或者文字
+extension UIBarButtonItem { //可以通过判断来决定是否需要图片或者文字  可以进一步优化
+    //isBack: BOOL = false
   
     convenience init(title: String,imageName: String, target:AnyObject?, action: Selector){
        

@@ -21,6 +21,7 @@ class GQBaseViewController: UIViewController {
         super.viewDidLoad()
 
         setUpUI()
+        loadData()
     }
    
     //重写title的set方法
@@ -28,6 +29,11 @@ class GQBaseViewController: UIViewController {
         didSet {
            navItem.title = title
         }
+    }
+    
+    //设置数据源
+    func loadData(){
+    
     }
 }
 
@@ -44,9 +50,11 @@ extension GQBaseViewController {
         let b:CGFloat = CGFloat(CGFloat(random())/CGFloat(RAND_MAX))
 
       view.backgroundColor = UIColor.init(red: r, green: g, blue: b, alpha: 1)
-        
+       
+   
         setUpNav()
         setUpTableView()
+     
     }
     
     private func setUpNav() {
@@ -62,5 +70,19 @@ extension GQBaseViewController {
       
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.height))
          view.insertSubview(tableView!, belowSubview: navigationBar)
+        tableView?.dataSource = self
+        tableView?.delegate = self
+    }
+}
+
+//MARK: - 设置数据源和代理
+extension GQBaseViewController: UITableViewDataSource,UITableViewDelegate {
+  
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
