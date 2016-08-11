@@ -16,6 +16,8 @@ class GQBaseViewController: UIViewController {
     
     //定义tablView
     var tableView:UITableView?
+    //定义刷新控件
+    var refresh:UIRefreshControl?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +75,10 @@ extension GQBaseViewController {
         tableView?.delegate = self
         
         tableView?.contentInset = UIEdgeInsetsMake(navigationBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
+        
+        refresh = UIRefreshControl()
+        tableView?.addSubview(refresh!)
+        refresh?.addTarget(self, action: Selector("loadData"), forControlEvents: UIControlEvents.ValueChanged)
     }
 }
 

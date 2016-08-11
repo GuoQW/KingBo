@@ -30,10 +30,17 @@ class GQHomeViewController: GQBaseViewController {
     //MARK: - 重写父类的方法
     override func loadData() {
         
-        for i in 0..<15 {
-          
-            statusList.insert(i.description, atIndex: 0)
+        print("开始刷新数据")
+        dispatch_after(2, dispatch_get_main_queue()) { () -> Void in
+            
+            for i in 0..<15 {
+                
+                self.statusList.insert(i.description, atIndex: 0)
+            }
         }
+        print("结束刷新")
+        self.refresh?.endRefreshing()
+        tableView?.reloadData()
     }
 
 }
