@@ -1,0 +1,25 @@
+[
+  {
+    "clsName" : "GQHomeViewController",
+    "title" : "首页",
+    "imageName" : "home"
+  },
+  {
+    "clsName" : "GQMessageViewController",
+    "title" : "消息",
+    "imageName" : "message_center"
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "clsName" : "GQDiscoverViewController",
+    "title" : "发现",
+    "imageName" : "discover"
+  },
+  {
+    "clsName" : "GQProfileViewController",
+    "title" : "我的",
+    "imageName" : "profile"
+  }
+]

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C78E50EA1D5C37A900062AEE /* GQVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E50E91D5C37A900062AEE /* GQVisitorView.swift */; };
+		C78E50EC1D5C42CB00062AEE /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = C78E50EB1D5C42CB00062AEE /* main.json */; };
 		C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042411D5B21EA00085868 /* AppDelegate.swift */; };
 		C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F042481D5B21EA00085868 /* Assets.xcassets */; };
 		C7F042571D5B21EA00085868 /* KingBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F042561D5B21EA00085868 /* KingBoTests.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C78E50E91D5C37A900062AEE /* GQVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GQVisitorView.swift; sourceTree = "<group>"; };
+		C78E50EB1D5C42CB00062AEE /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		C7F0423E1D5B21EA00085868 /* KingBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F042411D5B21EA00085868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F042481D5B21EA00085868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C78E50E81D5C379500062AEE /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				C78E50E91D5C37A900062AEE /* GQVisitorView.swift */,
+			);
+			path = VisitorView;
+			sourceTree = "<group>";
+		};
 		C7F042351D5B21EA00085868 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +208,8 @@
 		C7F042751D5B269800085868 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C78E50EB1D5C42CB00062AEE /* main.json */,
+				C78E50E81D5C379500062AEE /* VisitorView */,
 				C7F042E21D5B75E800085868 /* Test */,
 				C7F042791D5B26D200085868 /* GQMainViewController.swift */,
 				C7F0427B1D5B26F700085868 /* GQNavigationController.swift */,
@@ -349,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78E50EC1D5C42CB00062AEE /* main.json in Resources */,
 				C7F042491D5B21EA00085868 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F042861D5B278400085868 /* GQProfileViewController.swift in Sources */,
+				C78E50EA1D5C37A900062AEE /* GQVisitorView.swift in Sources */,
 				C7F0428A1D5B2E7300085868 /* NSBundle+Extension.swift in Sources */,
 				C7F042421D5B21EA00085868 /* AppDelegate.swift in Sources */,
 				C7F0427C1D5B26F700085868 /* GQNavigationController.swift in Sources */,

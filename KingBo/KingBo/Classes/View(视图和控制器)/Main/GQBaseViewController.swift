@@ -89,8 +89,7 @@ extension GQBaseViewController {
     //MARK: - 设置用户登录视图
     private func setupUserView() {
        
-        let loginView = UIView(frame: view.bounds)
-        loginView.backgroundColor = UIColor.greenColor()
+        let loginView = GQVisitorView(frame: view.bounds)
         view.insertSubview(loginView, belowSubview: navigationBar)
     }
 }

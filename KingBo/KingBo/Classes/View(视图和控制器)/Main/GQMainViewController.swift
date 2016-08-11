@@ -42,14 +42,25 @@ class GQMainViewController: UITabBarController {
 extension GQMainViewController { //UI界面设置
   
     private func setUpAllChidsViewController() {
-       
-        let arr = [
-            ["clsName":"GQHomeViewController","title":"首页","imageName":"home"],
-            ["clsName":"GQMessageViewController","title":"消息","imageName":"message_center"],
-            ["clsName":"UIViewController"],
-            ["clsName":"GQDiscoverViewController","title":"发现","imageName":"discover"],
-            ["clsName":"GQProfileViewController","title":"我的","imageName":"profile"]
-                ]
+        
+        //从沙河中取得
+        
+        //反序列化转成数组
+        guard let path = NSBundle.mainBundle().pathForResource("main", ofType: "json"),
+            data = NSData(contentsOfFile: path),
+        arr = try! NSJSONSerialization.JSONObjectWithData(data, options: []) as? [[String:String]] else{
+            return
+        }
+//        let arr = [
+//            ["clsName":"GQHomeViewController","title":"首页","imageName":"home"],
+//            ["clsName":"GQMessageViewController","title":"消息","imageName":"message_center"],
+//            ["clsName":"UIViewController"],
+//            ["clsName":"GQDiscoverViewController","title":"发现","imageName":"discover"],
+//            ["clsName":"GQProfileViewController","title":"我的","imageName":"profile"]
+//                ]
+//        let data = try! NSJSONSerialization.dataWithJSONObject(arr, options: [.PrettyPrinted])
+//        (data as NSData).writeToFile("/Users/go/Desktop/main.json", atomically: true)
+  
         var arrM = [UIViewController]()
         
         for dict in arr {
