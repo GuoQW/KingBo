@@ -30,7 +30,7 @@ class GQHomeViewController: GQBaseViewController {
     //MARK: - 重写父类的方法
     override func loadData() {
         
-        for i in 0..<10 {
+        for i in 0..<15 {
           
             statusList.insert(i.description, atIndex: 0)
         }

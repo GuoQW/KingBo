@@ -19,7 +19,7 @@ class GQBaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpUI()
         loadData()
     }
@@ -50,8 +50,7 @@ extension GQBaseViewController {
         let b:CGFloat = CGFloat(CGFloat(random())/CGFloat(RAND_MAX))
 
       view.backgroundColor = UIColor.init(red: r, green: g, blue: b, alpha: 1)
-       
-   
+       automaticallyAdjustsScrollViewInsets = false
         setUpNav()
         setUpTableView()
      
@@ -72,6 +71,8 @@ extension GQBaseViewController {
          view.insertSubview(tableView!, belowSubview: navigationBar)
         tableView?.dataSource = self
         tableView?.delegate = self
+        
+        tableView?.contentInset = UIEdgeInsetsMake(navigationBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
     }
 }
 
